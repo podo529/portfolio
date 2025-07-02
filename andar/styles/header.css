@@ -1,0 +1,55 @@
+header {}
+header .header_wrap {
+    position:sticky; top:0;
+    padding:0 130px;
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.1);
+    z-index:700;
+    background-color:#fff;;
+}
+header .header_wrap h1 {}
+header .header_wrap .menu {
+    display:flex; justify-content:space-between;
+}
+header .header_wrap .menu .gnb {display:flex; margin:auto 0; gap:20px; }
+header .header_wrap .menu .gnb li {}
+header .header_wrap .menu .gnb li a {font-size:0.938rem;}
+header .header_wrap .menu .right_menu {display:flex; margin:auto 0; width:116px; gap:10px}
+header .header_wrap .menu .right_menu li {}
+header .header_wrap .menu .right_menu li a {}
+header .header_wrap .menu .right_menu li a img {}
+/* 검색창 */
+header .header_wrap .search_bg {
+    position:absolute; top:70px; right:210px;
+    width:500px;
+    box-shadow:2px 2px 5px 0 rgba(0,0,0,0.1);
+    text-align:right;
+    padding:10px;
+    background-color:#fff;
+    z-index:750;
+}
+header .header_wrap .search_bg .search {}
+header .header_wrap .search_bg .search form {
+    display:flex; justify-content:center;
+}
+header .header_wrap .search_bg .search form input {
+    font-size:0.938rem; border-bottom:0.5px solid #000;
+    line-height:32px; width:70%;
+}
+header .header_wrap .search_bg .search form .search_btn2 {margin-left:10px;}
+header .header_wrap .search_bg .search form .search_btn2 img {}
+header .header_wrap .search_bg .search .search_close_btn {position:absolute; top:5px; right:5px;}
+
+/* lnb */
+header .lnb_wrap {
+    text-align:center; display:flex; padding:50px 230px 70px;
+    box-shadow:0 1px 2px 0 rgba(0,0,0,0.1);
+    position:sticky; z-index:600;
+    background-color:#fff;
+}
+header .lnb_wrap .lnb {
+    width:120px; border-right:1px solid #eee;
+}
+header .lnb_wrap .lnb:last-child {border:0;}
+header .lnb_wrap .lnb li {margin-bottom:15px;}
+header .lnb_wrap .lnb li a {font-size:0.813rem; font-weight:300;}
+header .lnb_wrap .lnb li a:hover {font-weight:400;}
