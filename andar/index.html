@@ -1,13 +1,551 @@
 <!-- andar -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="기능성 원단과 편안한 옷 브랜드 안다르입니다.">
+    <meta name="keywords" content="안다르, 운동복, 레깅스, 활동복, 출근룩, 안다르 전지현, 쿨링웨어">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>안다르</title>
 </head>
 <body>
-    <div class="main_page">
+    <header>
+        <div class="header_wrap">
+            <nav class="menu">
+                <h1><a href="./index.html"><img src="./images/logo.png" alt="안다르"></a></h1>
+                <ul class="gnb">
+                    <li><a href="#">신상품</a></li>
+                    <li><a href="#">베스트</a></li>
+                    <li><a href="#">우먼즈</a></li>
+                    <li><a href="#">맨즈</a></li>
+                    <li><a href="#">운동복</a></li>
+                    <li><a href="#">언더웨어</a></li>
+                    <li><a href="#">키즈</a></li>
+                    <li><a href="#">가방/용품/신발</a></li>
+                    <li><a href="#">아울렛</a></li>
+                    <li><a href="#">Info</a></li>
+                    <li><a href="#">고객지원</a></li>
+                    <li><a href="#">상품권</a></li>
+                </ul>
+                <ul class="right_menu">
+                    <li class="search_btn1"><a href="#"><img src="./images/search_btn.png" alt="검색창열기"></a></li>
+                    <li><a href="#"><img src="./images/shopping_cart.png" alt="장바구니"></a></li>
+                    <li><a href="#"><img src="./images/person.png" alt="회원정보"></a></li>
+                    <li class="menu_btn"><a href="#"><img src="./images/menu_btn.png" alt="메뉴보기"></a></li>
+                </ul>
+            </nav>
+            <div class="search_bg">
+                <div class="search">
+                    <form action="#" method="get">
+                        <input type="text" maxlength="20" placeholder="검색어를 입력하세요.">
+                        <button type="button" class="search_btn2"><img src="./images/search_btn.png" alt="검색하기"></button>
+                    </form>
+                    <button type="button" class="search_close_btn"><img src="./images/close_btn.png" alt="검색창 닫기"></button>
+                </div>
+            </div>
+        </div>
+        <div class="lnb_wrap">
+            <ul class="lnb lnb_new">
+                <li><a href="#">핫썸머 이벤트</a></li>
+                <li><a href="#">우먼즈</a></li>
+                <li><a href="#">맨즈</a></li>
+                <li><a href="#">키즈</a></li>
+                <li><a href="#">운동복</a></li>
+                <li><a href="#">언더웨어</a></li>
+                <li><a href="#">가방/용품/신발</a></li>
+            </ul>
+            <ul class="lnb lnb_best">
+                <li><a href="#">핫썸머 이벤트</a></li>
+                <li><a href="#">우먼즈</a></li>
+                <li><a href="#">맨즈</a></li>
+                <li><a href="#">키즈</a></li>
+                <li><a href="#">운동복</a></li>
+                <li><a href="#">언더웨어</a></li>
+                <li><a href="#">가방/용품/신발</a></li>
+            </ul>
+            <ul class="lnb lnb_women">
+                <li><a href="#">상의</a></li>
+                <li><a href="#">하의</a></li>
+                <li><a href="#">세트</a></li>
+                <li><a href="#">쿨링웨어</a></li>
+                <li><a href="#">스커트/원피스</a></li>
+                <li><a href="#">슬리브리스</a></li>
+                <li><a href="#">가디건/커버업</a></li>
+                <li><a href="#">스포츠 브라탑</a></li>
+                <li><a href="#">레깅스</a></li>
+                <li><a href="#">임부복</a></li>
+            </ul>
+            <ul class="lnb lnb_men">
+                <li><a href="#">상의</a></li>
+                <li><a href="#">하의</a></li>
+                <li><a href="#">세트</a></li>
+                <li><a href="#">쿨링웨어</a></li>
+                <li><a href="#">비즈니스 애슬레저</a></li>
+                <li><a href="#">슬리브리스</a></li>
+                <li><a href="#">애슬레저 셔츠</a></li>
+                <li><a href="#">드로즈/이너 </a></li>
+            </ul>
+            <ul class="lnb lnb_sports">
+                <li><a href="#">골프</a></li>
+                <li><a href="#">러닝</a></li>
+                <li><a href="#">스윔웨어</a></li>
+                <li><a href="#">필라테스/요가</a></li>
+                <li><a href="#">GYM</a></li>
+                <li><a href="#">아웃도러</a></li>
+                <li><a href="#">테니스</a></li>
+            </ul>
+            <ul class="lnb lnb_underwear">
+                <li><a href="#">우먼즈</a></li>
+                <li><a href="#">맨즈</a></li>
+                <li><a href="#">키즈</a></li>
+            </ul>
+            <ul class="lnb lnb_kids">
+                <li><a href="#">여아</a></li>
+                <li><a href="#">남아</a></li>
+                <li><a href="#">남녀공용</a></li>
+                <li><a href="#">세트</a></li>
+                <li><a href="#">가방/양말</a></li>
+                <li><a href="#">스윔웨어</a></li>
+            </ul>
+            <ul class="lnb lnb_etc">
+                <li><a href="#">워킹화</a></li>
+                <li><a href="#">러닝화</a></li>
+                <li><a href="#">양말</a></li>
+                <li><a href="#">가방</a></li>
+                <li><a href="#">용품</a></li>
+                <li><a href="#">모자/헤어밴드</a></li>
+                <li><a href="#">마스크</a></li>
+            </ul>
+            <ul class="lnb lnb_outlet">
+                <li><a href="#">우먼즈</a></li>
+                <li><a href="#">맨즈</a></li>
+                <li><a href="#">키즈</a></li>
+            </ul>
+            <ul class="lnb lnb_info">
+                <li><a href="#">브랜드 스토리</a></li>
+                <li><a href="#">매거진</a></li>
+                <li><a href="#">애슬릿 리더</a></li>
+                <li><a href="#">서스테이너블</a></li>
+                <li><a href="#">EVENT</a></li>
+            </ul>
+            <ul class="lnb lnb_customer_service">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">자주 묻는 질문</a></li>
+                <li><a href="#">전국 매장 안내</a></li>
+                <li><a href="#">대량구매 안내</a></li>
+                <li><a href="#">세탁 방법 안내</a></li>
+            </ul>
+        </div>
+        <aside class="mobile_menu">
+            <div class="top">
+                <a href="#" class="login_btn">로그인</a>
+                <a href="#" class="join_btn">회원가입</a>
+                <img src="./images/close_btn.png" alt="닫기">
+            </div>
+            <div class="menu_list">
+                <ul class="right_gnb">
+                    <li>
+                        <div class="menu_more_tab">
+                            <a href="#">신상품</a>
+                            <a href="#" class="menu_more_btn"><img src="./images/arrow_drop_down.png" alt="더보기"></a>
+                        </div>
+                        <ul class="lnb lnb_new">
+                            <li><a href="#">핫썸머 이벤트</a></li>
+                            <li><a href="#">우먼즈</a></li>
+                            <li><a href="#">맨즈</a></li>
+                            <li><a href="#">키즈</a></li>
+                            <li><a href="#">운동복</a></li>
+                            <li><a href="#">언더웨어</a></li>
+                            <li><a href="#">가방/용품/신발</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="menu_more_tab">
+                            <a href="#">베스트</a>
+                            <a href="#" class="menu_more_btn"><img src="./images/arrow_drop_down.png" alt="더보기"></a>
+                        </div>
+                        <ul class="lnb lnb_best">
+                            <li><a href="#">핫썸머 이벤트</a></li>
+                            <li><a href="#">우먼즈</a></li>
+                            <li><a href="#">맨즈</a></li>
+                            <li><a href="#">키즈</a></li>
+                            <li><a href="#">운동복</a></li>
+                            <li><a href="#">언더웨어</a></li>
+                            <li><a href="#">가방/용품/신발</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="menu_more_tab">
+                            <a href="#">우먼즈</a>
+                            <a href="#" class="menu_more_btn"><img src="./images/arrow_drop_down.png" alt="더보기"></a>
+                        </div>
+                        <ul class="lnb lnb_women">
+                            <li><a href="#">상의</a></li>
+                            <li><a href="#">하의</a></li>
+                            <li><a href="#">세트</a></li>
+                            <li><a href="#">쿨링웨어</a></li>
+                            <li><a href="#">스커트/원피스</a></li>
+                            <li><a href="#">슬리브리스</a></li>
+                            <li><a href="#">가디건/커버업</a></li>
+                            <li><a href="#">스포츠 브라탑</a></li>
+                            <li><a href="#">레깅스</a></li>
+                            <li><a href="#">임부복</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="menu_more_tab">
+                            <a href="#">맨즈</a>
+                            <a href="#" class="menu_more_btn"><img src="./images/arrow_drop_down.png" alt="더보기"></a>
+                        </div>
+                        <ul class="lnb lnb_men">
+                            <li><a href="#">상의</a></li>
+                            <li><a href="#">하의</a></li>
+                            <li><a href="#">세트</a></li>
+                            <li><a href="#">쿨링웨어</a></li>
+                            <li><a href="#">비즈니스 애슬레저</a></li>
+                            <li><a href="#">슬리브리스</a></li>
+                            <li><a href="#">애슬레저 셔츠</a></li>
+                            <li><a href="#">드로즈/이너 </a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="menu_more_tab">
+                            <a href="#">운동복</a>
+                            <a href="#" class="menu_more_btn"><img src="./images/arrow_drop_down.png" alt="더보기"></a>
+                        </div>
+                        <ul class="lnb lnb_sports">
+                            <li><a href="#">골프</a></li>
+                            <li><a href="#">러닝</a></li>
+                            <li><a href="#">스윔웨어</a></li>
+                            <li><a href="#">필라테스/요가</a></li>
+                            <li><a href="#">GYM</a></li>
+                            <li><a href="#">아웃도러</a></li>
+                            <li><a href="#">테니스</a></li>
+                        </ul>
+                    </li>
+                    <li><div class="menu_more_tab">
+                        <a href="#">언더웨어</a>
+                        <a href="#" class="menu_more_btn"><img src="./images/arrow_drop_down.png" alt="더보기"></a>
+                    </div>
+                        <ul class="lnb lnb_underwear">
+                            <li><a href="#">우먼즈</a></li>
+                            <li><a href="#">맨즈</a></li>
+                            <li><a href="#">키즈</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="menu_more_tab">
+                            <a href="#">키즈</a>
+                            <a href="#" class="menu_more_btn"><img src="./images/arrow_drop_down.png" alt="더보기"></a>
+                        </div>
+                        <ul class="lnb lnb_kids">
+                            <li><a href="#">여아</a></li>
+                            <li><a href="#">남아</a></li>
+                            <li><a href="#">남녀공용</a></li>
+                            <li><a href="#">세트</a></li>
+                            <li><a href="#">가방/양말</a></li>
+                            <li><a href="#">스윔웨어</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="menu_more_tab">
+                            <a href="#">가방/용품/신발</a>
+                            <a href="#" class="menu_more_btn"><img src="./images/arrow_drop_down.png" alt="더보기"></a>
+                        </div>
+                        <ul class="lnb lnb_etc">
+                            <li><a href="#">워킹화</a></li>
+                            <li><a href="#">러닝화</a></li>
+                            <li><a href="#">양말</a></li>
+                            <li><a href="#">가방</a></li>
+                            <li><a href="#">용품</a></li>
+                            <li><a href="#">모자/헤어밴드</a></li>
+                            <li><a href="#">마스크</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="menu_more_tab">
+                            <a href="#">아울렛</a>
+                            <a href="#" class="menu_more_btn"><img src="./images/arrow_drop_down.png" alt="더보기"></a>
+                        </div>
+                        <ul class="lnb lnb_outlet">
+                            <li><a href="#">우먼즈</a></li>
+                            <li><a href="#">맨즈</a></li>
+                            <li><a href="#">키즈</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="menu_more_tab">
+                            <a href="#">Info</a>
+                            <a href="#" class="menu_more_btn"><img src="./images/arrow_drop_down.png" alt="더보기"></a>
+                        </div>
+                        <ul class="lnb lnb_info">
+                            <li><a href="#">브랜드 스토리</a></li>
+                            <li><a href="#">매거진</a></li>
+                            <li><a href="#">애슬릿 리더</a></li>
+                            <li><a href="#">서스테이너블</a></li>
+                            <li><a href="#">EVENT</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="menu_more_tab">
+                            <a href="#">고객지원</a>
+                            <a href="#" class="menu_more_btn"><img src="./images/arrow_drop_down.png" alt="더보기"></a>
+                        </div>
+                        <ul class="lnb lnb_customer_service">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">자주 묻는 질문</a></li>
+                            <li><a href="#">전국 매장 안내</a></li>
+                            <li><a href="#">대량구매 안내</a></li>
+                            <li><a href="#">세탁 방법 안내</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">상품권</a></li>
+                </ul>
+            </div>
+        </aside>
+    </header>
+    <div id="wrap">
+        <main>
+            <div class="swiper-top-banner">
+                <div class="top_banner_text">
+                    <p>핫썸머 이벤트</p>
+                    <span>땀 걱정 없이 하루 종일 쾌적하게,<br>안다르와 완벽한 여름을 준비하세요.</span>
+                </div>
+                <div class="banner_num">
+                    <img src="" alt="이전 배너보기">
+                    <span>1</span>
+                    <span>/</span>
+                    <span>4</span>
+                    <img src="" alt="다음 배너보기">
+                </div>
+            </div>
+            <div class="main_page">
+                <div class="new_product">
+                    <div class="new_product_title">
+                        <p>2025 NEW ITEM</p>
+                        <h2>안다르 신상</h2>
+                        <div class="category">
+                            <div class="category_btn">
+                                <button type="button">WOMEN</button>
+                                <button type="button">MEN</button>
+                                <button type="button">KIDS</button>
+                            </div>
+                            <a href="#">VIEW MORE<img src="" alt="더보기"></a>
+                        </div>
+                    </div>
+                    <ul class="product_list">
+                        <li>
+                            <div class="product_img">
+                                <a href="#"><img src="" alt="#"></a>
+                                <div class="wish_cart_btn">
+                                    <a href="#">WISH</a>
+                                    <a href="#">CART</a>
+                                </div>
+                            </div>
+                            <a href="#"><span>셔링밴드 투인원 쇼프</span></a>
+                            <div class="price">
+                                <span>49,000원</span>
+                                <span>회원가 <em>46,500원</em></span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="middle_banner">
+                        <p>HOT SUMMER<br>핫썸머 이벤트</p>
+                        <p>땀 걱정 없이 하루 종일 쾌적하게,<br>안다르와 완벽한 여름을 준비하세요</p>
+                    </div>
+                </div>
+                <!-- 베스트상품 -->
+                <div class="best_product">
+                    <div class="best_left">
+                        <div class="best_product_title">
+                            <p>BEST SELLERS</p>
+                            <h2>베스트 상품</h2>
+                            <div class="category">
+                                <div class="category_btn">
+                                    <button type="button">WOMEN</button>
+                                    <button type="button">MEN</button>
+                                    <button type="button">KIDS</button>
+                                </div>
+                                <a href="#">VIEW MORE<img src="" alt="더보기"></a>
+                            </div>
+                        </div>
+                        <div class="big_img_product">
+                            <a href="#" class="1st_product">
+                                <span>에어쿨링 맥시 와이드 레깅스</span>
+                                <em>57,000원</em>
+                            </a>
+                            <div class="wish_cart_btn">
+                                <a href="#">WISH</a>
+                                <a href="#">CART</a>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="product_list best_right">
+                        <li>
+                            <div class="product_img">
+                                <a href="#"><img src="" alt=""></a>
+                                <div class="wish_cart_btn">
+                                    <a href="#">WISH</a>
+                                    <a href="#">CART</a>
+                                </div>
+                            </div>
+                            <a href="#"><span>셔링밴드 투인원 쇼프</span></a>
+                            <div class="price">
+                                <span>49,000원</span>
+                                <span>회원가 <em>46,500원</em></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 비디오 -->
+                <div class="video_product">
+                    <div class="video_top">
+                        <div class="viedo_product_title">
+                            <p>BEST SELLERS</p>
+                            <h2>베스트 상품</h2>
+                        </div>
+                        <a href="#">VIEW MORE<img src="" alt="더보기"></a>
+                    </div>
+                    <div class="video_bottom">
+                        <div class="product_view_more">
+                            <a href="#"><img src="" alt=""></a>
+                            <a href="#"><img src="" alt=""></a>
+                            <a href="#"><img src="" alt=""></a>
+                            <a href="#"><img src="" alt=""></a>
+                        </div>
+                        <iframe width="864" height="486" src="https://www.youtube.com/embed/S96Nr2O4Ihk?autoplay=1&mute=1&loop=1" title="전지현의 안다르｜2025 andar TVCF (30s ver.)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- 옷감 배너 -->
+                <div class="middle_banner2">
+                    <p>테크니컬 애슬레저, 안다르</p>
+                    <p>Technical Athleisure, andar</p>
+                    <p>안다르 AI랩에서 글로벌 최고의 수입 원사를 사용하여,<br>혁신적 기능부터 감성적이기까지 한 시그니처 원단을 개발합니다.</p>
+                </div>
+                <!-- 추천 조합 -->
+                <div class="look_book_product">
+                    <div class="look_book_title">
+                        <p>LOOK BOOK</p>
+                        <h2>추천 조합</h2>
+                    </div>
+                    <div class="swiper look_book_left">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                    </div>
+                    <div class="look_book_right">
+                        <div class="category">
+                            <p>닿는 순간 느껴지는 시원함,<br>올여름 필수템 2WAY 팬츠</p>
+                            <div class="category_btn">
+                                <button type="button">WOMEN</button>
+                                <button type="button">MEN</button>
+                                <button type="button">KIDS</button>
+                            </div>
+                            <div class="scroll-container">
+                                <div class="loock_book_product">
+                                    <img src="" alt="">
+                                    <span>더블 레이어 숏 자켓</span>
+                                    <em>139,000원</em>
+                                    <div class="wish_cart_look_book_btn">
+                                        <a href="#">WISH</a>
+                                        <a href="#">CART</a>
+                                    </div>
+                                </div>
+                                <div class="loock_book_product">
+                                    <img src="" alt="">
+                                    <span>검피니티 멜란지 크롭탑</span>
+                                    <em>39,000원</em>
+                                    <div class="wish_cart_look_book_btn">
+                                        <a href="#">WISH</a>
+                                        <a href="#">CART</a>
+                                    </div>
+                                </div>
+                                <div class="loock_book_product">
+                                    <img src="" alt="">
+                                    <span>에어쿨링 바이커 4부 레깅스</span>
+                                    <em>43,000원</em>
+                                    <div class="wish_cart_look_book_btn">
+                                        <a href="#">WISH</a>
+                                        <a href="#">CART</a>
+                                    </div>
+                                </div>
+                                <div class="loock_book_product">
+                                    <img src="" alt="">
+                                    <span>안다르 제트플라이</span>
+                                    <em>43,000원</em>
+                                    <div class="wish_cart_look_book_btn">
+                                        <a href="#">WISH</a>
+                                        <a href="#">CART</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 혜택 -->
+                <div class="benefit_wrap">
+                    <a href="#" class="membership_benefit">
+                        <img src="" alt="#">
+                        <span>이미 안다르 회원이라면?</span>
+                        <span>멤버십 전용 혜택 확인</span>
+                    </a>
+                    <a href="#" class="join_benefit">
+                        <img src="" alt="#">
+                        <span>안다르가 처음이라면?</span>
+                        <span>1만원 할인 쿠폰 받기</span>
+                    </a>
+                    <a href="#" class="kakao_benefit">
+                        <img src="" alt="#">
+                        <span>카카오톡 채널 추가하고</span>
+                        <span>1만원 할인 쿠폰 받기</span>
+                    </a>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer_wrap">
+                <div class="logo_footer">
+                    <img src="" alt="#">
+                    <p>애슬레저 1위, 4년 연속(2022~2025)<br>대한민국 패션품질대상 스포츠 애슬레저 부문</p>
+                </div>
+                <div class="middle_footer">
+                    <div class="top">
+                        <a href="#">이용약관</a>
+                        <a href="#">상품권 이용약관</a>
+                        <a href="#">개인정보처리방침</a>
+                        <a href="#">쇼핑몰 이용안내</a>
+                        <a href="#">대량구매안내</a>
+                        <a href="#">‘애슬릿 리더’신청</a>
+                    </div>
+                    <div class="company_contents">
+                        <p>주식회사 안다르</p>
+                        <p>대표이사 : 김철웅, 공성아</p>
+                        <p>사업자등록번호 : 103-88-00990</p>
+                        <p>통신판매업신소 : 2024-서울송파-3789</p>
+                        <p>주소 : 05510 서울 송파구 올림필로35다길 42 한국루터회관 9,11,12층</p>
+                        <p>TEL : 1566-7318</p>
+                        <p>이용문의 : help@andar.co.kr</p>
+                        <p>마케팅제휴 문의 : partnership@andar.co.kr</p>
+                        <p>해외수출 문의 : overseas@andar.co.kr</p>
+                    </div>
+                    <p>Copyright by 안다르. all rights reserved.</p>
+                </div>
+                <div class="right_footer">
+                    <div class="sns_btn">
+                        <a href="#"><img src="" alt=""></a>
+                        <a href="#"><img src="" alt=""></a>
+                        <a href="#"><img src="" alt=""></a>
+                    </div>
+                    <div class="customer_service">
+                        <p>고객센터</p>
+                        <em>1566-7318</em>
+                        <p>채팅 문의하기</p>
+                        <p>평일 AM 10:00 ~ PM 05:30 (주말, 공휴일 휴무)</p>
+                        <p>점심 PM 12:00 ~ PM 01:00</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>

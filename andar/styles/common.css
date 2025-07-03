@@ -3,12 +3,12 @@ header .header_wrap {
     position:sticky; top:0;
     padding:13px 130px;
     box-shadow:0 2px 5px 0 rgba(0,0,0,0.1);
-    z-index:700;
-    background-color:#fff;;
+    background-color:#fff; z-index:700;
 }
 header .header_wrap h1 {}
 header .header_wrap .menu {
     display:flex; justify-content:space-between; align-items:center;
+    position:relative; z-index:700;
 }
 header .header_wrap .menu .gnb {display:flex; margin:auto 0; gap:20px; }
 header .header_wrap .menu .gnb li {}
@@ -44,16 +44,16 @@ header .header_wrap .search_bg .search .search_close_btn {position:absolute; top
 header .lnb_wrap {
     text-align:center; display:flex; padding:50px 230px 70px;
     box-shadow:0 1px 2px 0 rgba(0,0,0,0.1);
-    position:sticky; z-index:600;
-    background-color:#fff;
+    position:fixed;  top:96px; left:0;
+    background-color:#fff; z-index:600;
 }
-header .lnb_wrap .lnb {
+header .lnb {
     width:120px; border-right:1px solid #eee;
 }
-header .lnb_wrap .lnb:last-child {border:0;}
-header .lnb_wrap .lnb li {margin-bottom:15px;}
-header .lnb_wrap .lnb li a {font-size:0.813rem; font-weight:300;}
-header .lnb_wrap .lnb li a:hover {font-weight:400;}
+header .lnb:last-child {border:0;}
+header .lnb li {margin-bottom:15px;}
+header .lnb li a {font-size:0.813rem; font-weight:300;}
+header .lnb li a:hover {font-weight:400;}
 /* 모바일 nav */
 header .mobile_menu {
     width:320px; position:absolute; right:0;
@@ -79,14 +79,16 @@ header .mobile_menu .menu_list {}
 header .mobile_menu .menu_list .right_gnb {}
 header .mobile_menu .menu_list .right_gnb li {
     padding:10px 10px;
-    border:1px solid red; position:relative;
+    position:relative;
 }
-header .mobile_menu .menu_list .right_gnb li a {font-weight:600;}
-header .mobile_menu .menu_list .right_gnb li .menu_more_btn {position:absolute; top:7px;right:10px;}
-header .mobile_menu .menu_list .right_gnb li .menu_more_btn img {width:19px;}
+header .mobile_menu .menu_list .right_gnb li .menu_more_tab {}
+header .mobile_menu .menu_list .right_gnb li .menu_more_tab a {font-weight:600;}
+header .mobile_menu .menu_list .right_gnb li .menu_more_tab .menu_more_btn {position:absolute; top:7px;right:10px;}
+header .mobile_menu .menu_list .right_gnb li .menu_more_tab .menu_more_btn img {width:19px;}
+header .mobile_menu .menu_list .right_gnb li > a {font-weight:600;}
 header .mobile_menu .menu_list .right_gnb li .lnb {}
 header .mobile_menu .menu_list .right_gnb li .lnb li {padding-left:10px;}
-header .mobile_menu .menu_list .right_gnb li .lnb li a {font-size:0.813rem; font-weight:300;}
+header .mobile_menu .menu_list .right_gnb li .lnb li a {font-size:0.813rem; font-weight:400;}
 
 /* 반응형 */
 @media screen and (max-width:1249px) {

@@ -8,6 +8,7 @@ const gnb = document.querySelector('.gnb');
 const menuOpenBtn = document.querySelector('.menu_btn');
 const mobileRightMenu = document.querySelector('.mobile_menu');
 const menuCloseBtn = document.querySelector('.mobile_menu .top img');
+const menuMore = document.querySelectorAll('.menu_more_tab');
 const menuMoreBtn = document.querySelectorAll('.menu_more_btn img');
 const mobileLnb = document.querySelectorAll('.mobile_menu .lnb');
 //console.log(searchBtn, searchForm);
@@ -15,7 +16,7 @@ const mobileLnb = document.querySelectorAll('.mobile_menu .lnb');
 //기초 셋팅
 searchForm.style.display = 'none';
 lnbWrap.style.transform = 'translateY(-450px)';
-
+//lnbWrap.style.display = 'none';
 mobileRightMenu.style.display = 'none';
 
 
@@ -26,6 +27,7 @@ searchBtn.addEventListener('click',()=>{
 searchCloseBtn.addEventListener('click',()=>{
     searchForm.style.display = 'none';
 });
+
 gnb.addEventListener('mouseover',()=>{
     //lnbWrap.style.display = 'flex';
     lnbWrap.style.transform = 'translateY(0)';
@@ -49,13 +51,20 @@ menuOpenBtn.addEventListener('click',()=>{
 menuCloseBtn.addEventListener('click',()=>{
     mobileRightMenu.style.display = 'none';
 })
-menuMoreBtn.forEach((obj, ind, arr)=>{
-    mobileLnb.forEach((obj, ind, arr)=>{
-        obj.style.display = 'none';
-        menuMoreBtn[ind].addEventListener('click',()=>{
-            mobileLnb[ind].style.display = 'block';
-            menuMoreBtn[ind].src = './images/arrow_drop_up.png';
-        })
-    })
-})
 
+for(let i=0; i<11; i++){
+    mobileLnb[i].style.display = 'none';
+    menuMore[i].addEventListener('click',()=>{
+        if(mobileLnb[i].style.display == 'block'){
+            mobileLnb[i].style.display = 'none';
+            menuMoreBtn[i].src = './images/arrow_drop_down.png';
+        }else{
+            for(let j=0; j<11; j++){
+                mobileLnb[j].style.display = 'none';
+                menuMoreBtn[j].src = './images/arrow_drop_down.png';
+            }
+            mobileLnb[i].style.display = 'block';
+            menuMoreBtn[i].src = './images/arrow_drop_up.png';
+        }
+    });
+}
