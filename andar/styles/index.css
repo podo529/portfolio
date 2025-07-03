@@ -1,0 +1,84 @@
+#wrap {}
+#wrap main {}
+#wrap main .top-banner {}
+#wrap main .top-banner .slide1 {}
+#wrap main .top-banner .banner_num {}
+#wrap main .top-banner .banner_num img {}
+#wrap main .top-banner .banner_num span {}
+#wrap main .main_page {}
+/* 1행 신상 */
+#wrap main .main_page .new_product {}
+#wrap main .main_page .new_product .new_product_title {}
+#wrap main .main_page .new_product .new_product_title p {}
+#wrap main .main_page .new_product .new_product_title h2 {}
+#wrap main .main_page .new_product .new_product_title .category {}
+#wrap main .main_page .new_product .new_product_title .category .category_btn {}
+#wrap main .main_page .new_product .new_product_title .category .category_btn button {}
+#wrap main .main_page .new_product .new_product_title .category a {}
+#wrap main .main_page .new_product .new_product_title .category a img {}
+#wrap main .main_page .new_product .product_list {}
+#wrap main .main_page .new_product .product_list li {}
+#wrap main .main_page .new_product .product_list li .product_img {}
+#wrap main .main_page .new_product .product_list li .product_img a {}
+#wrap main .main_page .new_product .product_list li .product_img a img {}
+#wrap main .main_page .new_product .product_list li .product_img .wish_cart_btn {}
+#wrap main .main_page .new_product .product_list li .product_img .wish_cart_btn a {}
+#wrap main .main_page .new_product .product_list li a {}
+#wrap main .main_page .new_product .product_list li a span {}
+#wrap main .main_page .new_product .product_list li .price {}
+#wrap main .main_page .new_product .product_list li .price span {}
+#wrap main .main_page .new_product .product_list li .price span em {}
+/*  여름 배너 */
+#wrap main .main_page .middle_banner {}
+#wrap main .main_page .middle_banner p {}
+/*  베스트상품 */
+#wrap main .main_page .best_product {}
+#wrap main .main_page .best_product .bedt_left {}
+#wrap main .main_page .best_product .bedt_left .best_product_title {}
+#wrap main .main_page .best_product .bedt_left .best_product_title p {}
+#wrap main .main_page .best_product .bedt_left .best_product_title h2 {}
+#wrap main .main_page .best_product .bedt_left .best_product_title .category {}
+#wrap main .main_page .best_product .bedt_left .best_product_title .category .category_btn {}
+#wrap main .main_page .best_product .bedt_left .best_product_title .category .category_btn button {}
+#wrap main .main_page .best_product .bedt_left .best_product_title .category a {}
+#wrap main .main_page .best_product .bedt_left .best_product_title .category a img {}
+#wrap main .main_page .best_product .bedt_left .big_img_product {}
+#wrap main .main_page .best_product .bedt_left .big_img_product a {}
+#wrap main .main_page .best_product .bedt_left .big_img_product a span {}
+#wrap main .main_page .best_product .bedt_left .big_img_product a span em {}
+#wrap main .main_page .best_product .bedt_left .big_img_product .wish_cart_btn {}
+#wrap main .main_page .best_product .best_right {}
+#wrap main .main_page .best_product .best_right li {}
+#wrap main .main_page .best_product .best_right li .product_img {}
+#wrap main .main_page .best_product .best_right li .product_img a {}
+#wrap main .main_page .best_product .best_right li .product_img a img {}
+#wrap main .main_page .best_product .best_right li .product_img .wish_cart_btn {}
+#wrap main .main_page .best_product .best_right li a {}
+#wrap main .main_page .best_product .best_right li a span {}
+#wrap main .main_page .best_product .best_right li .price {}
+/* 비디오 */
+#wrap main .main_page .video_product {}
+#wrap main .main_page .video_product .video_top {}
+#wrap main .main_page .video_product .video_top .viedo_product_title {}
+#wrap main .main_page .video_product .video_top .viedo_product_title p {}
+#wrap main .main_page .video_product .video_top .viedo_product_title h2 {}
+#wrap main .main_page .video_product .video_top a {}
+#wrap main .main_page .video_product .video_top a img {}
+#wrap main .main_page .video_product .video_bottom {}
+#wrap main .main_page .video_product .video_bottom .product_view_more {}
+#wrap main .main_page .video_product .video_bottom .product_view_more a {}
+#wrap main .main_page .video_product .video_bottom .product_view_more a img {}
+#wrap main .main_page .video_product .video_bottom .video {}
+/* 옷감배너 */
+#wrap main .main_page .middle_banner2 {}
+#wrap main .main_page .middle_banner2 p:nth-child(1) {}
+#wrap main .main_page .middle_banner2 p:nth-child(2) {}
+#wrap main .main_page .middle_banner2 p:nth-child(3) {}
+/* 추천조합 */
+/* 공통 */
+.wish_cart_btn {}
+.wish_cart_btn a {}
+.price {}
+.price span {}
+.price span em {}
+.price span em del {}
