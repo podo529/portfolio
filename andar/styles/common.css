@@ -1,6 +1,7 @@
 header {min-width:1250px;}
 header .header_wrap {
-    position:sticky; top:0;
+    position:fixed; top:0; left:0;
+    width:100%;
     padding:13px 130px;
     box-shadow:0 2px 5px 0 rgba(0,0,0,0.1);
     background-color:#fff; z-index:700;
@@ -8,7 +9,6 @@ header .header_wrap {
 header .header_wrap h1 {}
 header .header_wrap .menu {
     display:flex; justify-content:space-between; align-items:center;
-    position:relative; z-index:700;
 }
 header .header_wrap .menu .gnb {display:flex; margin:auto 0; gap:20px; }
 header .header_wrap .menu .gnb li {}
@@ -58,6 +58,7 @@ header .lnb li a:hover {font-weight:400;}
 header .mobile_menu {
     width:320px; position:absolute; right:0;
     box-shadow:0 2px 5px 0 rgba(0,0,0,0.1);
+    background-color:#fff;
 }
 header .mobile_menu .top {padding:40px; text-align:center;}
 header .mobile_menu .top .login_btn {
