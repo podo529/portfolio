@@ -1,12 +1,28 @@
+body {max-width:1920px; position:relative; top: 97px;}
 #wrap {}
 #wrap main {}
-#wrap main .top-banner {}
-#wrap main .top-banner .slide1 {}
-#wrap main .top-banner .banner_num {}
-#wrap main .top-banner .banner_num img {}
-#wrap main .top-banner .banner_num span {}
+/* 배너 */
+#wrap main .top_banner {height:790px;}
+#wrap main .top_banner .swiper-wrapper {}
+#wrap main .top_banner .swiper-wrapper .slide1 {
+    height:100%; background:url(../images/bnr001.jpg) no-repeat  center center; background-size:cover; text-align:center; padding-top:550px;
+}
+#wrap main .top_banner .swiper-wrapper .slide1 p {
+    color:#fff; font-size:2.625rem; font-weight:600; margin-bottom:20px;}
+#wrap main .top_banner .swiper-wrapper .slide1 span {
+    color:#fff; font-size:1.375rem; line-height:130%;}
+#wrap main .banner_num {
+    width:112px; border-radius:18px; display:flex; margin:0 auto;
+    background-color:rgba(0,0,0,0.4);
+    position:relative; top:-60px; z-index:300; height:32px; padding:8px;
+    justify-content:space-between;
+}
+#wrap main .banner_num img {width:16px; height:16px;}
+#wrap main .banner_num span {font-size:0.9rem; color:#fff; font-weight:300;}
+#wrap main .banner_num .bnr_num {}
+#wrap main .banner_num .bnr_total {}
+    /* 1행 신상 */
 #wrap main .main_page {}
-/* 1행 신상 */
 #wrap main .main_page .new_product {}
 #wrap main .main_page .new_product .new_product_title {}
 #wrap main .main_page .new_product .new_product_title p {}

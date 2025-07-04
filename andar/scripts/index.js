@@ -1,0 +1,1 @@
+const topSwiper = new Swiper('.top_banner');

@@ -7,13 +7,20 @@
     <meta name="keywords" content="안다르, 운동복, 레깅스, 활동복, 출근룩, 안다르 전지현, 쿨링웨어">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>안다르</title>
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
     <script src="./scripts/header.js" defer></script>
+    <script src="./scripts/index.js" defer></script>
 </head>
 <body>
-    <div id="wrap"></div>
+    <div id="wrap">
         <header>
             <div class="header_wrap">
                 <nav class="menu">
@@ -33,10 +40,10 @@
                         <li><a href="#">상품권</a></li>
                     </ul>
                     <ul class="right_menu">
-                        <li class="search_btn1"><a href="#"><img src="./images/search_btn.png" alt="검색창열기"></a></li>
+                        <li class="search_btn1"><button type="button"><img src="./images/search_btn.png" alt="검색창열기"></button></li>
                         <li><a href="#"><img src="./images/shopping_cart.png" alt="장바구니"></a></li>
                         <li><a href="#"><img src="./images/person.png" alt="회원정보"></a></li>
-                        <li class="menu_btn"><a href="#"><img src="./images/menu_btn.png" alt="메뉴보기"></a></li>
+                        <li class="menu_btn"><button type="button"><img src="./images/menu_btn.png" alt="메뉴보기"></button></li>
                     </ul>
                 </nav>
                 <div class="search_bg">
@@ -310,22 +317,23 @@
             </aside>
         </header>
         <main>
-            <div class="swiper top-banner">
+            <div class="swiper top_banner">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide slide1">
                         <p>핫썸머 이벤트</p>
                         <span>땀 걱정 없이 하루 종일 쾌적하게,<br>안다르와 완벽한 여름을 준비하세요.</span>
                     </div>
-                    <div class="banner_num">
-                        <img src="" alt="이전 배너보기">
-                        <span>1</span>
-                        <span>/</span>
-                        <span>4</span>
-                        <img src="" alt="다음 배너보기">
-                    </div>
                 </div>
             </div>
+            <div class="banner_num">
+                    <img src="./images/banner_arrow_prev.png" alt="이전 배너보기">
+                    <span class="bnr_num">1</span>
+                    <span>/</span>
+                    <span class="bnr_total">4</span>
+                    <img src="./images/banner_arrow_next.png" alt="다음 배너보기">
+            </div>
             <div class="main_page">
+                <!-- 신상 -->
                 <div class="new_product">
                     <div class="new_product_title">
                         <p>2025 NEW ITEM</p>
