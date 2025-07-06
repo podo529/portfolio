@@ -13,10 +13,12 @@
     <!--플러그인 필수 JS cdn 연결-->
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
-    <script src="./scripts/header.js" defer></script>
+    <script src="./scripts/common.js" defer></script>
     <script src="./scripts/index.js" defer></script>
 </head>
 <body>
@@ -319,18 +321,20 @@
         <main>
             <div class="swiper top_banner">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide slide1">
+                    <div class="swiper-slide slide1 slide">
                         <p>핫썸머 이벤트</p>
                         <span>땀 걱정 없이 하루 종일 쾌적하게,<br>안다르와 완벽한 여름을 준비하세요.</span>
                     </div>
+                    <div class="swiper-slide slide2 slide">
+                        <p>러닝복은 안다르에서</p>
+                        <span>달리는 그 순간,<br>가벼운 움직임을 느껴보세요</span>
+                    </div>
                 </div>
-            </div>
-            <div class="banner_num">
-                    <img src="./images/banner_arrow_prev.png" alt="이전 배너보기">
-                    <span class="bnr_num">1</span>
-                    <span>/</span>
-                    <span class="bnr_total">4</span>
-                    <img src="./images/banner_arrow_next.png" alt="다음 배너보기">
+                <div class="banner_num">
+                    <span class="swiper-pagination banner_num_count">1/2</span>
+                    <img src="./images/banner_arrow_prev.png" class="swiper-button-prev" alt="이전 배너보기">
+                    <img src="./images/banner_arrow_next.png" class="swiper-button-next" alt="다음 배너보기">
+                </div>
             </div>
             <div class="main_page">
                 <!-- 신상 -->
@@ -344,29 +348,97 @@
                                 <button type="button">MEN</button>
                                 <button type="button">KIDS</button>
                             </div>
-                            <a href="#">VIEW MORE<img src="" alt="더보기"></a>
+                            <a href="#">VIEW MORE<img src="./images/add.png" alt="더보기"></a>
                         </div>
                     </div>
                     <ul class="product_list">
                         <li>
                             <div class="product_img">
-                                <a href="#"><img src="" alt="#"></a>
+                                <a href="#"><img src="./images/new001.jpg" alt=""></a>
                                 <div class="wish_cart_btn">
                                     <a href="#">WISH</a>
                                     <a href="#">CART</a>
                                 </div>
                             </div>
                             <a href="#"><span>셔링밴드 투인원 쇼프</span></a>
-                            <div class="price">
+                            <div class="price price_membership">
                                 <span>49,000원</span>
                                 <span>회원가 <em>46,500원</em></span>
                             </div>
                         </li>
+                        <li>
+                            <div class="product_img">
+                                <a href="#"><img src="./images/new002.jpg" alt=""></a>
+                                <div class="wish_cart_btn">
+                                    <a href="#">WISH</a>
+                                    <a href="#">CART</a>
+                                </div>
+                            </div>
+                            <a href="#"><span>[1&1] 에어리핏 5부 쇼츠</span></a>
+                            <div class="price">
+                                <span>42,000원</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product_img">
+                                <a href="#"><img src="./images/new003.jpg" alt=""></a>
+                                <div class="wish_cart_btn">
+                                    <a href="#">WISH</a>
+                                    <a href="#">CART</a>
+                                </div>
+                            </div>
+                            <a href="#"><span>에어윈드 조거팬츠</span></a>
+                            <div class="price">
+                                <span>59,000원</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product_img">
+                                <a href="#"><img src="./images/new004.jpg" alt=""></a>
+                                <div class="wish_cart_btn">
+                                    <a href="#">WISH</a>
+                                    <a href="#">CART</a>
+                                </div>
+                            </div>
+                            <a href="#"><span>에어리프리 조거핏 레깅스</span></a>
+                            <div class="price">
+                                <span>59,000원</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product_img">
+                                <a href="#"><img src="./images/new005.jpg" alt=""></a>
+                                <div class="wish_cart_btn">
+                                    <a href="#">WISH</a>
+                                    <a href="#">CART</a>
+                                </div>
+                            </div>
+                            <a href="#"><span>[1&1] 에어스트 밴딩 3.5부 쇼츠</span></a>
+                            <div class="price">
+                                <span>72,000원</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product_img">
+                                <a href="#"><img src="./images/new006.jpg" alt=""></a>
+                                <div class="wish_cart_btn">
+                                    <a href="#">WISH</a>
+                                    <a href="#">CART</a>
+                                </div>
+                            </div>
+                            <a href="#"><span>[SET] 풀앤비치 래쉬가드 & 스윔팬츠</span></a>
+                            <div class="price">
+                                <span>69,000원</span>
+                                <span><del>108,000원</del><em>36%</em></span>
+                            </div>
+                        </li>
                     </ul>
                 </div>
+                <!-- 여름 배너 -->
                 <div class="middle_banner">
-                    <p>HOT SUMMER<br>핫썸머 이벤트</p>
-                    <p>땀 걱정 없이 하루 종일 쾌적하게,<br>안다르와 완벽한 여름을 준비하세요</p>
+                    <p>HOT SUMMER</p>
+                    <p>핫썸머 이벤트</p>
+                    <p>땀 걱정 없이 하루 종일 쾌적하게,<br>안다르와 완벽한 여름을 준비하세요.</p>
                 </div>
                 <!-- 베스트상품 -->
                 <div class="best_product">
@@ -380,13 +452,15 @@
                                     <button type="button">MEN</button>
                                     <button type="button">KIDS</button>
                                 </div>
-                                <a href="#">VIEW MORE<img src="" alt="더보기"></a>
+                                <a href="#">VIEW MORE<img src="./images/add.png" alt="더보기"></a>
                             </div>
                         </div>
-                        <div class="big_img_product">
-                            <a href="#" class="1st_product">
-                                <span>에어쿨링 맥시 와이드 레깅스</span>
-                                <em>57,000원</em>
+                        <div class="big_img_product product_img">
+                            <a href="#" class="product_1st">
+                                <div class="name_1st">
+                                    <span>에어쿨링 맥시 와이드 레깅스</span>
+                                    <em>57,000원</em>
+                                </div>
                             </a>
                             <div class="wish_cart_btn">
                                 <a href="#">WISH</a>
@@ -394,38 +468,133 @@
                             </div>
                         </div>
                     </div>
-                    <ul class="product_list best_right">
-                        <li>
-                            <div class="product_img">
-                                <a href="#"><img src="" alt=""></a>
-                                <div class="wish_cart_btn">
-                                    <a href="#">WISH</a>
-                                    <a href="#">CART</a>
+                    <div class="product_list best_right">
+                        <ul class="best_right_top">
+                            <li>
+                                <div class="product_img">
+                                    <a href="#"><img src="./images/best002.jpg" alt=""></a>
+                                    <div class="wish_cart_btn">
+                                        <a href="#">WISH</a>
+                                        <a href="#">CART</a>
+                                    </div>
                                 </div>
-                            </div>
-                            <a href="#"><span>셔링밴드 투인원 쇼프</span></a>
-                            <div class="price">
-                                <span>49,000원</span>
-                                <span>회원가 <em>46,500원</em></span>
-                            </div>
-                        </li>
-                    </ul>
+                                <a href="#"><span>프레시무브 와이드 팬츠</span></a>
+                                <div class="price">
+                                    <span>59,000원</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product_img">
+                                    <a href="#"><img src="./images/best003.jpg" alt=""></a>
+                                    <div class="wish_cart_btn">
+                                        <a href="#">WISH</a>
+                                        <a href="#">CART</a>
+                                    </div>
+                                </div>
+                                <a href="#"><span>[4+1] NEW 안다르 올데이핏 쿨링 브라 (노후크형)</span></a>
+                                <div class="price">
+                                    <span>189,000원</span>
+                                    <span><del>380,000원</del><em>50%</em></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product_img">
+                                    <a href="#"><img src="./images/best004.jpg" alt=""></a>
+                                    <div class="wish_cart_btn">
+                                        <a href="#">WISH</a>
+                                        <a href="#">CART</a>
+                                    </div>
+                                </div>
+                                <a href="#"><span>[3 set] 에어로코튼 오버핏 티셔츠</span></a>
+                                <div class="price">
+                                    <span>75,000원</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product_img">
+                                    <a href="#"><img src="./images/best005.jpg" alt=""></a>
+                                    <div class="wish_cart_btn">
+                                        <a href="#">WISH</a>
+                                        <a href="#">CART</a>
+                                    </div>
+                                </div>
+                                <a href="#"><span>[3 set] 에어쿨링 4.5부 & 3부 레깅스</span></a>
+                                <div class="price">
+                                    <span>75,000원</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="best_right_bottom">
+                            <li>
+                                <div class="product_img">
+                                    <a href="#"><img src="./images/best006.jpg" alt=""></a>
+                                    <div class="wish_cart_btn">
+                                        <a href="#">WISH</a>
+                                        <a href="#">CART</a>
+                                    </div>
+                                </div>
+                                <a href="#"><span>[1&1] 에어스트 4.5부 쇼츠</span></a>
+                                <div class="price">
+                                    <span>85,000원</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product_img">
+                                    <a href="#"><img src="./images/best007.jpg" alt=""></a>
+                                    <div class="wish_cart_btn">
+                                        <a href="#">WISH</a>
+                                        <a href="#">CART</a>
+                                    </div>
+                                </div>
+                                <a href="#"><span>[3 set] 비 프리 크롭탑(올데이 & 레이서백)</span></a>
+                                <div class="price">
+                                    <span>69,000원</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product_img">
+                                    <a href="#"><img src="./images/best008.jpg" alt=""></a>
+                                    <div class="wish_cart_btn">
+                                        <a href="#">WISH</a>
+                                        <a href="#">CART</a>
+                                    </div>
+                                </div>
+                                <a href="#"><span>오버핏 숏슬리브 & 시그니처 레깅스</span></a>
+                                <div class="price">
+                                    <span>59,000원</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product_img">
+                                    <a href="#"><img src="./images/best009.jpg" alt=""></a>
+                                    <div class="wish_cart_btn">
+                                        <a href="#">WISH</a>
+                                        <a href="#">CART</a>
+                                    </div>
+                                </div>
+                                <a href="#"><span>에어리핏 와이드 팬츠</span></a>
+                                <div class="price">
+                                    <span>59,000원</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <!-- 비디오 -->
                 <div class="video_product">
                     <div class="video_top">
                         <div class="viedo_product_title">
-                            <p>BEST SELLERS</p>
-                            <h2>베스트 상품</h2>
+                            <p>자유를 느끼고, 한계를 넘어서며, 러닝을 즐기는</p>
+                            <h2>전지현의 러닝룩</h2>
                         </div>
-                        <a href="#">VIEW MORE<img src="" alt="더보기"></a>
+                        <a href="#">VIEW MORE<img src="./images/add.png" alt="더보기"></a>
                     </div>
                     <div class="video_bottom">
                         <div class="product_view_more">
-                            <a href="#"><img src="" alt=""></a>
-                            <a href="#"><img src="" alt=""></a>
-                            <a href="#"><img src="" alt=""></a>
-                            <a href="#"><img src="" alt=""></a>
+                            <a href="#"><img src="./images/double_arrow.png" alt=""></a>
+                            <a href="#"><img src="./images/double_arrow.png" alt=""></a>
+                            <a href="#"><img src="./images/double_arrow.png" alt=""></a>
+                            <a href="#"><img src="./images/double_arrow.png" alt=""></a>
                         </div>
                         <iframe width="864" height="486" src="https://www.youtube.com/embed/S96Nr2O4Ihk?autoplay=1&mute=1&loop=1&playlist=S96Nr2O4Ihk" title="전지현의 안다르｜2025 andar TVCF (30s ver.)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video"></iframe>
                     </div>
@@ -438,14 +607,16 @@
                 </div>
                 <!-- 추천 조합 -->
                 <div class="look_book_product">
-                    <div class="look_book_title">
-                        <p>LOOK BOOK</p>
-                        <h2>추천 조합</h2>
-                    </div>
                     <div class="look_book_left">
-                        <img src="" alt="">
-                        <img src="" alt="">
-                        <img src="" alt="">
+                        <div class="look_book_title">
+                            <p>LOOK BOOK</p>
+                            <h2>추천 조합</h2>
+                        </div>
+                        <div class="look_book_left_img">
+                            <img src="./images/lookbook_l001.jpg" alt="">
+                            <img src="./images/lookbook_l002.jpg" alt="">
+                            <img src="./images/lookbook_l003.jpg" alt="">
+                        </div>
                     </div>
                     <div class="look_book_right">
                         <div class="category">
@@ -455,63 +626,63 @@
                                 <button type="button">MEN</button>
                                 <button type="button">KIDS</button>
                             </div>
-                            <div class="swiper">
-                                <div class="swiper-wrapper scroll-container">
-                                    <div class="swiper-slide look_book_slide1">
-                                        <img src="" alt="">
-                                        <span>더블 레이어 숏 자켓</span>
-                                        <em>139,000원</em>
-                                        <div class="wish_cart_look_book_btn">
-                                            <a href="#">WISH</a>
-                                            <a href="#">CART</a>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide look_book_slide2">
-                                        <img src="" alt="">
-                                        <span>검피니티 멜란지 크롭탑</span>
-                                        <em>39,000원</em>
-                                        <div class="wish_cart_look_book_btn">
-                                            <a href="#">WISH</a>
-                                            <a href="#">CART</a>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide look_book_slide3">
-                                        <img src="" alt="">
-                                        <span>에어쿨링 바이커 4부 레깅스</span>
-                                        <em>43,000원</em>
-                                        <div class="wish_cart_look_book_btn">
-                                            <a href="#">WISH</a>
-                                            <a href="#">CART</a>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide look_book_slide4">
-                                        <img src="" alt="">
-                                        <span>안다르 제트플라이</span>
-                                        <em>43,000원</em>
-                                        <div class="wish_cart_look_book_btn">
-                                            <a href="#">WISH</a>
-                                            <a href="#">CART</a>
-                                        </div>
-                                    </div>
+                        </div>
+                        <div class="swiper look_book_swiper">
+                            <div class="swiper-wrapper scroll-container scroll_width">
+                                <div class="swiper-slide look_book_slide">
+                                    <img src="./images/look_book001.jpg" alt="">
+                                    <span>더블 레이어 숏 자켓</span>
+                                    <em>139,000원</em>
+                                    <a href="#">WISH</a>
+                                    <a href="#">CART</a>
+                                </div>
+                                <div class="swiper-slide look_book_slide">
+                                    <img src="./images/look_book002.jpg" alt="">
+                                    <span>검피니티 멜란지 크롭탑</span>
+                                    <em>39,000원</em>
+                                    <a href="#">WISH</a>
+                                    <a href="#">CART</a>
+                                </div>
+                                <div class="swiper-slide look_book_slide">
+                                    <img src="./images/look_book003.jpg" alt="">
+                                    <span>에어쿨링 바이커 4부 레깅스</span>
+                                    <em>43,000원</em>
+                                    <a href="#">WISH</a>
+                                    <a href="#">CART</a>
+                                </div>
+                                <div class="swiper-slide look_book_slide">
+                                    <img src="./images/look_book004.jpg" alt="">
+                                    <span>안다르 제트플라이</span>
+                                    <em>43,000원</em>
+                                    <a href="#">WISH</a>
+                                    <a href="#">CART</a>
+                                </div>
+                                <div class="swiper-slide look_book_slide">
+                                    <img src="./images/look_book005.jpg" alt="">
+                                    <span>서포트 쿠션 러닝 삭스</span>
+                                    <em>10.900원</em>
+                                    <a href="#">WISH</a>
+                                    <a href="#">CART</a>
                                 </div>
                             </div>
+                            <div class="swiper-scrollbar scroll_bar"></div>
                         </div>
                     </div>
                 </div>
                 <!-- 혜택 -->
                 <div class="benefit_wrap">
                     <a href="#" class="membership_benefit">
-                        <img src="" alt="#">
+                        <img src="./images/benefit001.png" alt="">
                         <span>이미 안다르 회원이라면?</span>
                         <span>멤버십 전용 혜택 확인</span>
                     </a>
                     <a href="#" class="join_benefit">
-                        <img src="" alt="#">
+                        <img src="./images/benefit002.png" alt="">
                         <span>안다르가 처음이라면?</span>
                         <span>1만원 할인 쿠폰 받기</span>
                     </a>
                     <a href="#" class="kakao_benefit">
-                        <img src="" alt="#">
+                        <img src="./images/kakao.png" alt="">
                         <span>카카오톡 채널 추가하고</span>
                         <span>1만원 할인 쿠폰 받기</span>
                     </a>
@@ -520,37 +691,44 @@
         </main>
         <footer>
             <div class="footer_wrap">
-                <div class="logo_footer">
-                    <img src="" alt="#">
-                    <p>애슬레저 1위, 4년 연속(2022~2025)<br>대한민국 패션품질대상 스포츠 애슬레저 부문</p>
-                </div>
-                <div class="middle_footer">
-                    <div class="top">
-                        <a href="#">이용약관</a>
-                        <a href="#">상품권 이용약관</a>
-                        <a href="#">개인정보처리방침</a>
-                        <a href="#">쇼핑몰 이용안내</a>
-                        <a href="#">대량구매안내</a>
-                        <a href="#">‘애슬릿 리더’신청</a>
+                <div class="left_footer">
+                    <div class="logo_footer">
+                        <a href="./"><img src="./images/logo002.png" alt=""></a>
+                        <p>애슬레저 1위, 4년 연속(2022~2025)<br>대한민국 패션품질대상 스포츠 애슬레저 부문</p>
+                        <button class="andar_info">사업자 정보<img src="./images/arrow_info_icon.png" alt=""></button>
                     </div>
-                    <div class="company_contents">
-                        <p>주식회사 안다르</p>
-                        <p>대표이사 : 김철웅, 공성아</p>
-                        <p>사업자등록번호 : 103-88-00990</p>
-                        <p>통신판매업신소 : 2024-서울송파-3789</p>
-                        <p>주소 : 05510 서울 송파구 올림필로35다길 42 한국루터회관 9,11,12층</p>
-                        <p>TEL : 1566-7318</p>
-                        <p>이용문의 : help@andar.co.kr</p>
-                        <p>마케팅제휴 문의 : partnership@andar.co.kr</p>
-                        <p>해외수출 문의 : overseas@andar.co.kr</p>
+                    <div class="middle_footer">
+                        <div class="top">
+                            <a href="#">이용약관</a>
+                            <a href="#">상품권 이용약관</a>
+                            <a href="#">개인정보처리방침</a>
+                            <a href="#">쇼핑몰 이용안내</a>
+                            <a href="#">대량구매안내</a>
+                            <a href="#">‘애슬릿 리더’신청</a>
+                        </div>
+                        <div class="company_contents">
+                            <p>주식회사 안다르</p>
+                            <div class="company_line">
+                                <p>대표이사 : 김철웅, 공성아</p>
+                                <p>사업자등록번호 : 103-88-00990</p>
+                            </div>
+                            <p>통신판매업신소 : 2024-서울송파-3789</p>
+                            <p>주소 : 05510 서울 송파구 올림필로35다길 42 한국루터회관 9,11,12층</p>
+                            <p>TEL : 1566-7318</p>
+                            <p>이용문의 : help@andar.co.kr</p>
+                            <div class="company_line">
+                                <p>마케팅제휴 문의 : partnership@andar.co.kr</p>
+                                <p>해외수출 문의 : overseas@andar.co.kr</p>
+                            </div>
+                        </div>
+                        <p>Copyright by 안다르. all rights reserved.</p>
                     </div>
-                    <p>Copyright by 안다르. all rights reserved.</p>
                 </div>
-                <div class="right_footer">
-                    <div class="sns_btn">
-                        <a href="#"><img src="" alt=""></a>
-                        <a href="#"><img src="" alt=""></a>
-                        <a href="#"><img src="" alt=""></a>
+                    <div class="right_footer">
+                        <div class="sns_btn">
+                        <a href="#"><img src="./images/insta.png" alt=""></a>
+                        <a href="#"><img src="./images/youtube.png" alt=""></a>
+                        <a href="#"><img src="./images/facebook.png" alt=""></a>
                     </div>
                     <div class="customer_service">
                         <p>고객센터</p>
