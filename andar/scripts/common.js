@@ -10,7 +10,7 @@ const mobileRightMenu = document.querySelector('.mobile_menu');
 const menuCloseBtn = document.querySelector('.mobile_menu .top img');
 const menuMore = document.querySelectorAll('.menu_more_tab');
 const menuMoreBtn = document.querySelectorAll('.menu_more_btn img');
-const mobileLnb = document.querySelectorAll('.mobile_menu .lnb');
+const mobileLnb = document.querySelectorAll('.mobile_menu .mobile_lnb');
 //console.log(searchBtn, searchForm);
 
 //footer 변수

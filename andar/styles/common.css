@@ -59,7 +59,7 @@ header .lnb li a:hover {font-weight:400;}
 header .mobile_menu {
     width:320px; position:fixed; right:0; top: 70px; z-index:740;
     box-shadow:0 2px 5px 0 rgba(0,0,0,0.1);
-    background-color:#fff;
+    background-color:#fff; height:100vh;
 }
 header .mobile_menu .top {padding:40px; text-align:center;}
 header .mobile_menu .top .login_btn {
@@ -80,7 +80,7 @@ header .mobile_menu .top img {position:absolute; top:10px; right:10px;}
 header .mobile_menu .menu_list {}
 header .mobile_menu .menu_list .right_gnb {}
 header .mobile_menu .menu_list .right_gnb li {
-    padding:10px 10px;
+    padding:10px 20px;
     position:relative;
 }
 header .mobile_menu .menu_list .right_gnb li .menu_more_tab {}
@@ -88,9 +88,10 @@ header .mobile_menu .menu_list .right_gnb li .menu_more_tab a {font-weight:600;}
 header .mobile_menu .menu_list .right_gnb li .menu_more_tab .menu_more_btn {position:absolute; top:7px;right:10px;}
 header .mobile_menu .menu_list .right_gnb li .menu_more_tab .menu_more_btn img {width:19px;}
 header .mobile_menu .menu_list .right_gnb li > a {font-weight:600;}
-header .mobile_menu .menu_list .right_gnb li .lnb {}
-header .mobile_menu .menu_list .right_gnb li .lnb li {padding-left:10px;}
-header .mobile_menu .menu_list .right_gnb li .lnb li a {font-size:0.813rem; font-weight:400;}
+header .mobile_menu .menu_list .right_gnb li .mobile_lnb {}
+header .mobile_menu .menu_list .right_gnb li .mobile_lnb li {padding-left:10px;}
+header .mobile_menu .menu_list .right_gnb li .mobile_lnb li a {font-size:0.813rem; font-weight:300;}
+header .mobile_menu .menu_list .right_gnb li .mobile_lnb li a:hover {font-weight:400;}
 /* ----------------------------------------------------footer */
 #wrap footer {background-color:#C86734; padding:70px 130px; height:max-content;}
 #wrap footer .footer_wrap {display:flex; justify-content:space-between;}

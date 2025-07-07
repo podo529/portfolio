@@ -22,3 +22,59 @@ const swiper = new Swiper(".look_book_swiper", {
         hide: false      // 항상 보이게
     },
 });
+
+const newCategoryBtn = document.querySelectorAll('.category_btn_new button');
+const bestCategoryBtn = document.querySelectorAll('.category_btn_best button');
+const lookbookCategoryBtn = document.querySelectorAll('.category_btn_lookbook button');
+/* const productImg = document.querySelectorAll('') */
+
+
+for(let i=0; i<3; i++){
+    newCategoryBtn[i].addEventListener('click',()=>{
+        if(newCategoryBtn[i].style.color == '#fff'){
+            newCategoryBtn[i].style.backgroundColor = '#fff';
+            newCategoryBtn[i].style.color = '#000';
+        }else{
+            for(let j=0; j<3; j++){
+                newCategoryBtn[j].style.backgroundColor = '#fff';
+                newCategoryBtn[j].style.color = '#000';
+            }
+            newCategoryBtn[i].style.backgroundColor = '#C86734';
+            newCategoryBtn[i].style.color = '#fff';
+        }
+    });
+}
+for(let i=0; i<3; i++){
+    bestCategoryBtn[i].addEventListener('click',()=>{
+        if(bestCategoryBtn[i].style.color == '#fff'){
+            bestCategoryBtn[i].style.backgroundColor = '#fff';
+            bestCategoryBtn[i].style.color = '#000';
+        }else{
+            for(let j=0; j<3; j++){
+                bestCategoryBtn[j].style.backgroundColor = '#fff';
+                bestCategoryBtn[j].style.color = '#000';
+            }
+            bestCategoryBtn[i].style.backgroundColor = '#C86734';
+            bestCategoryBtn[i].style.color = '#fff';
+        }
+    });
+}
+for(let i=0; i<3; i++){
+    lookbookCategoryBtn[i].addEventListener('click',()=>{
+        if(lookbookCategoryBtn[i].style.color == '#fff'){
+            lookbookCategoryBtn[i].style.backgroundColor = '#fff';
+            lookbookCategoryBtn[i].style.color = '#000';
+        }else{
+            for(let j=0; j<3; j++){
+                lookbookCategoryBtn[j].style.backgroundColor = '#fff';
+                lookbookCategoryBtn[j].style.color = '#000';
+            }
+            lookbookCategoryBtn[i].style.backgroundColor = '#C86734';
+            lookbookCategoryBtn[i].style.color = '#fff';
+        }
+    });
+}
+
+
+
+
