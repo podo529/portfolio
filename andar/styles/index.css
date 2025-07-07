@@ -156,15 +156,15 @@ body {max-width:1920px; position:relative; top: 97px;}
 #wrap main .main_page .look_book_product .look_book_right .look_book_swiper .look_book_slide {
     border:1px solid #eee; border-radius:5px;
     width:250px; padding:60px 20px;
-    text-align:center; margin-bottom:25px;
+    text-align:center; margin-bottom:25px; display:block;
 }
 #wrap main .main_page .look_book_product .look_book_right .look_book_swiper .look_book_slide img {width:180px;}
 #wrap main .main_page .look_book_product .look_book_right .look_book_swiper .look_book_slide span {font-size:0.938rem; margin:15px 0; display:block;}
 #wrap main .main_page .look_book_product .look_book_right .look_book_swiper .look_book_slide em {font-weight:500; display:block;}
-#wrap main .main_page .look_book_product .look_book_right .look_book_swiper .look_book_slide a {
+#wrap main .main_page .look_book_product .look_book_right .look_book_swiper .look_book_slide button {
     font-size:0.813rem; padding:6px 11px; width:54px;
     border:1px solid #eee; border-radius:7px; background-color:#fff; display:inline-block; margin-top:15px;}
-#wrap main .main_page .look_book_product .look_book_right .look_book_swiper .look_book_slide a:hover {
+#wrap main .main_page .look_book_product .look_book_right .look_book_swiper .look_book_slide button:hover {
     background-color:#C86734; color:#fff;
 }
 #wrap main .main_page .look_book_product .look_book_right .scroll_bar {height:3px; width:800px; position:absolute; bottom:0; left:0;}
@@ -186,7 +186,7 @@ body {max-width:1920px; position:relative; top: 97px;}
 .product_img:hover .wish_cart_btn {display:flex;}
 .product_img .wish_cart_btn a:hover {background-color:#fff;}
 .wish_cart_btn {
-position:absolute;top:50%; left:50%; transform:translate(-50%, -50%); display:none; z-index:6;}
+    position:absolute;top:50%; left:50%; transform:translate(-50%, -50%); display:none; z-index:6;}
 .wish_cart_btn a {
     font-size:0.75rem; padding:7px 14px; background-color:rgba(255,255,255,0.7);
     border:1px solid #eee; border-radius:7px; 
