@@ -1,3 +1,5 @@
+/* 1행 배너 */
+
 const topSwiper = new Swiper('.top_banner',{
         pagination: {
     el: ".swiper-pagination",
@@ -9,7 +11,7 @@ const topSwiper = new Swiper('.top_banner',{
     },
 });
 
-
+/* 추천 조합 */
 const swiper = new Swiper(".look_book_swiper", {
     direction: 'horizontal', // 가로 방향 슬라이드
     slidesPerView: 'auto',   // 자동 슬라이드 너비 설정
@@ -26,8 +28,34 @@ const swiper = new Swiper(".look_book_swiper", {
 const newCategoryBtn = document.querySelectorAll('.category_btn_new button');
 const bestCategoryBtn = document.querySelectorAll('.category_btn_best button');
 const lookbookCategoryBtn = document.querySelectorAll('.category_btn_lookbook button');
-/* const productImg = document.querySelectorAll('') */
 
+const newProductList = document.querySelectorAll('.new_product_wrap .product_list');
+const bestProductList = document.querySelectorAll('.best_right .product_best_right');
+const lookbookProductList = document.querySelectorAll('.look_book_swiper');
+
+//active
+/* newCategoryBtn.forEach(Click => {
+    Click.addEventListener('click',function(e) {
+        newCategoryBtn.forEach(el => el.classList.remove('active'));
+        this.classList.add('active');
+    })
+});
+bestCategoryBtn.forEach(Click => {
+    Click.addEventListener('click',function(e) {
+        bestCategoryBtn.forEach(el => el.classList.remove('active'));
+        this.classList.add('active');
+    })
+}); */
+/* newCategoryBtn.forEach(Click => {
+    Click.addEventListener('click',function(e) {
+        newCategoryBtn.forEach(el => el.classList.remove('active'));
+        this.classList.add('active');
+    })
+}); */
+
+
+
+/* 신상 */
 
 for(let i=0; i<3; i++){
     newCategoryBtn[i].addEventListener('click',()=>{
@@ -44,6 +72,17 @@ for(let i=0; i<3; i++){
         }
     });
 }
+
+newCategoryBtn.forEach((obj,ind)=>{
+    obj.addEventListener('click',()=>{
+        for(let i of newProductList){i.style.display = 'none'}
+        newProductList[ind].style.display = 'flex';
+    })
+})
+
+
+
+/* 베스트 */
 for(let i=0; i<3; i++){
     bestCategoryBtn[i].addEventListener('click',()=>{
         if(bestCategoryBtn[i].style.color == '#fff'){
@@ -59,6 +98,17 @@ for(let i=0; i<3; i++){
         }
     });
 }
+
+bestCategoryBtn.forEach((obj,ind)=>{
+    obj.addEventListener('click',()=>{
+        for(let i of bestProductList){i.style.display = 'none'}
+        bestProductList[ind].style.display = 'flex';
+    })
+})
+
+/* 추천조합 */
+
+
 for(let i=0; i<3; i++){
     lookbookCategoryBtn[i].addEventListener('click',()=>{
         if(lookbookCategoryBtn[i].style.color == '#fff'){
@@ -74,6 +124,13 @@ for(let i=0; i<3; i++){
         }
     });
 }
+
+lookbookCategoryBtn.forEach((obj,ind)=>{
+    obj.addEventListener('click',()=>{
+        for(let i of lookbookProductList){i.style.display = 'none'}
+        lookbookProductList[ind].style.display = 'flex';
+    })
+})
 
 
 
