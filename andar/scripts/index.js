@@ -31,27 +31,10 @@ const lookbookCategoryBtn = document.querySelectorAll('.category_btn_lookbook bu
 
 const newProductList = document.querySelectorAll('.new_product_wrap .product_list');
 const bestProductList = document.querySelectorAll('.best_right .product_best_right');
+const bestBigProduct = document.querySelectorAll('.big_img_product');
 const lookbookProductList = document.querySelectorAll('.look_book_swiper');
+const lookbookLeftImg = document.querySelectorAll('.look_book_left_img');
 
-//active
-/* newCategoryBtn.forEach(Click => {
-    Click.addEventListener('click',function(e) {
-        newCategoryBtn.forEach(el => el.classList.remove('active'));
-        this.classList.add('active');
-    })
-});
-bestCategoryBtn.forEach(Click => {
-    Click.addEventListener('click',function(e) {
-        bestCategoryBtn.forEach(el => el.classList.remove('active'));
-        this.classList.add('active');
-    })
-}); */
-/* newCategoryBtn.forEach(Click => {
-    Click.addEventListener('click',function(e) {
-        newCategoryBtn.forEach(el => el.classList.remove('active'));
-        this.classList.add('active');
-    })
-}); */
 
 
 
@@ -74,6 +57,10 @@ for(let i=0; i<3; i++){
 }
 
 newCategoryBtn.forEach((obj,ind)=>{
+    obj.addEventListener('click',()=>{
+        for(let i of newProductList){i.style.display = 'none'}
+        newProductList[ind].style.display = 'flex';
+    })
     obj.addEventListener('click',()=>{
         for(let i of newProductList){i.style.display = 'none'}
         newProductList[ind].style.display = 'flex';
@@ -103,6 +90,8 @@ bestCategoryBtn.forEach((obj,ind)=>{
     obj.addEventListener('click',()=>{
         for(let i of bestProductList){i.style.display = 'none'}
         bestProductList[ind].style.display = 'flex';
+        for(let i of bestBigProduct){i.style.display = 'none'}
+        bestBigProduct[ind].style.display = 'block';
     })
 })
 
@@ -129,6 +118,10 @@ lookbookCategoryBtn.forEach((obj,ind)=>{
     obj.addEventListener('click',()=>{
         for(let i of lookbookProductList){i.style.display = 'none'}
         lookbookProductList[ind].style.display = 'flex';
+    })
+    obj.addEventListener('click',()=>{
+        for(let i of lookbookLeftImg){i.style.display = 'none'}
+        lookbookLeftImg[ind].style.display = 'grid';
     })
 })
 

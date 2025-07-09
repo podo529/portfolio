@@ -77,18 +77,23 @@ body {max-width:1920px; position:relative; top: 97px;}
 #wrap main .main_page .best_product .best_left .best_product_title .category .category_btn button {}
 #wrap main .main_page .best_product .best_left .best_product_title .category a {}
 #wrap main .main_page .best_product .best_left .best_product_title .category a img {}
-#wrap main .main_page .best_product .best_left .big_img_product { 
+#wrap main .main_page .best_product .best_left .big_img_wrap .big_img_product { 
     height:705px; width:490px;}
-#wrap main .main_page .best_product .best_left .big_img_product .product_1st {
-    background:url(../images/best001.jpg) no-repeat center /cover; display:inline-block; width:100%; height:100%;
+#wrap main .main_page .best_product .best_left .big_img_wrap .big_img_product:nth-of-type(2),
+#wrap main .main_page .best_product .best_left .big_img_wrap .big_img_product:nth-of-type(3) {display:none;}
+#wrap main .main_page .best_product .best_left .big_img_wrap .big_img_product .product_1st {
+    display:block; width:100%; height:100%;
     position:relative;
 }
-#wrap main .main_page .best_product .best_left .big_img_product .product_1st .name_1st {
+#wrap main .main_page .best_product .best_left .big_img_wrap .big_img_product .product_1st_women {background:url(../images/best001.jpg) no-repeat center /cover;}
+#wrap main .main_page .best_product .best_left .big_img_wrap .big_img_product .product_1st_men {background:url(../images/best_men_big.jpg) no-repeat center /cover;}
+#wrap main .main_page .best_product .best_left .big_img_wrap .big_img_product .product_1st_kids {background:url(../images/best_kids_big.jpg) no-repeat center /cover; }
+#wrap main .main_page .best_product .best_left .big_img_wrap .big_img_product .product_1st .name_1st {
     display:flex; flex-flow:column nowrap; gap:10px; padding:20px; position:absolute; bottom:0;
     background:linear-gradient(0deg,rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%); width:100%;}
-#wrap main .main_page .best_product .best_left .big_img_product .product_1st .name_1st span {font-size:0.938rem; color:#fff;}
-#wrap main .main_page .best_product .best_left .big_img_product .product_1st .name_1st em {font-weight:500; color:#fff;}
-#wrap main .main_page .best_product .best_left .big_img_product .wish_cart_btn {}
+#wrap main .main_page .best_product .best_left .big_img_wrap .big_img_product .product_1st .name_1st span {font-size:0.938rem; color:#fff;}
+#wrap main .main_page .best_product .best_left .big_img_wrap .big_img_product .product_1st .name_1st em {font-weight:500; color:#fff;}
+#wrap main .main_page .best_product .best_left .big_img_wrap .big_img_product .wish_cart_btn {}
 #wrap main .main_page .best_product .product_best_right {display:flex; flex-flow:row wrap; gap:10px;/*  width:1140px; */}
 #wrap main .main_page .best_product .product_best_men {display:none;}
 #wrap main .main_page .best_product .product_best_kids {display:none;}
@@ -143,14 +148,16 @@ body {max-width:1920px; position:relative; top: 97px;}
 #wrap main .main_page .middle_banner2 p:nth-child(3) {font-size:1.375rem; line-height:120%;}
 /* 추천조합 */
 #wrap main .main_page .look_book_product {padding:90px 0; position:relative;}
-#wrap main .main_page .look_book_product .look_book_left {}
+#wrap main .main_page .look_book_product .look_book_left { position:relative;}
 #wrap main .main_page .look_book_product .look_book_left .look_book_title{padding:0 130px; margin-bottom:50px;}
 #wrap main .main_page .look_book_product .look_book_left .look_book_left_img {
-    display:grid; grid-template-areas:'thum1 thum3''thum2 thum3'; grid-template-columns:384px 530px;}
-#wrap main .main_page .look_book_product .look_book_left .look_book_left_img img {width:100%;}
+    display:grid; grid-template-areas:'thum1 thum3''thum2 thum3'; grid-template-columns:384px 530px; grid-template-rows:274.62px 274.62px;}
+#wrap main .main_page .look_book_product .look_book_left .look_book_left_img img {width:100%; height:100%; object-fit:cover;}
 #wrap main .main_page .look_book_product .look_book_left .look_book_left_img img:nth-child(1) {grid-area:thum1;}
 #wrap main .main_page .look_book_product .look_book_left .look_book_left_img img:nth-child(2) {grid-area:thum2;} 
 #wrap main .main_page .look_book_product .look_book_left .look_book_left_img img:nth-child(3) {grid-area:thum3;}
+#wrap main .main_page .look_book_product .look_book_left .lookbook_left_men,
+#wrap main .main_page .look_book_product .look_book_left .lookbook_left_kids {display:none;}
 #wrap main .main_page .look_book_product .look_book_right {position:absolute; bottom:90px; left:964px;}
 #wrap main .main_page .look_book_product .look_book_right .category {display:flex; flex-flow:column nowrap;}
 #wrap main .main_page .look_book_product .look_book_right .category p {font-size:1.125rem;}
@@ -236,7 +243,7 @@ img[src*=add] {width:15px;}
     #wrap main .main_page .new_product .product_list li:last-child {display:block;}
     /* 베스트 */
     #wrap main .main_page .best_product {padding:70px 80px;}
-    #wrap main .main_page .best_product .best_left .big_img_product { 
+    #wrap main .main_page .best_product .best_left .big_img_wrap .big_img_product { 
     height:540px; width:360px;}
     #wrap main .main_page .best_product .product_best_right {width:100%;}
     #wrap main .main_page .best_product .best_right li {width:calc((100% - 10px) / 2);}
@@ -295,8 +302,8 @@ img[src*=add] {width:15px;}
     /* 베스트 */
     #wrap main .main_page .best_product {flex-flow:column wrap; padding:40px 15px;}
     #wrap main .main_page .video_product .video_bottom {flex-flow :row wrap;}
-    #wrap main .main_page .best_product .best_left .big_img_product {width:100%; height:416px;}
-    #wrap main .main_page .best_product .best_left .big_img_product .product_1st {background-position:center 0%;}
+    #wrap main .main_page .best_product .best_left .big_img_wrap .big_img_product {width:100%; height:416px;}
+    #wrap main .main_page .best_product .best_left .big_img_wrap .big_img_product .product_1st {background-position:center 0%;}
     #wrap main .main_page .best_product .best_right {flex-flow:row wrap; width:100%;}
     #wrap main .main_page .best_product .best_right li {width:calc((100% - 10px) / 2);}
     /* 비디오 */

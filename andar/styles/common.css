@@ -48,8 +48,8 @@ header .lnb_wrap {
     position:fixed;  top:96px; left:0;
     background-color:#fff; z-index:600; width:100%;
 }
-header .lnb {
-    width:120px; border-right:1px solid #eee;
+header .lnb_wrap .lnb {
+    width:120px; border-right:1px solid #eee; 
 }
 header .lnb:last-child {border:0;}
 header .lnb li {margin-bottom:15px;}
