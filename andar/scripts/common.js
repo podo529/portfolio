@@ -2,7 +2,7 @@
 const searchCloseBtn = document.querySelector('.search_close_btn');
 const searchBtn = document.querySelector('.search_btn1');
 const searchForm = document.querySelector('.search_bg');
-const lnbWrap = document.querySelector('.lnb_wrap');
+const lnbWrap = document.querySelector('.lnb_bg');
 const gnb = document.querySelector('.gnb');
 //모바일,태블릿 nav 변수
 const menuOpenBtn = document.querySelector('.menu_btn');
