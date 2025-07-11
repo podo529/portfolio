@@ -3,17 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/common.css">
-    <link rel="stylesheet" href="./styles/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     <!-- 외부 스크립트 -->
     <!-- 스와이퍼 cdn -->
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- 스크롤 트리거 CDN 필수 연결 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
     <title>나무엑터스</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="./scripts/index.js" defer></script>
 </head>
 <body>
     <div id="wrap">
@@ -29,7 +36,8 @@
         <main>
             <div class="first_screen">
                 <h1><img src="./images/bnr.png" alt="나무엑터스"></h1>
-                <iframe width="889" height="500" src="https://www.youtube.com/embed/3aRtJHfsN4g?loop=1&autoplay=1&mute=1&controls=0&playlist=3aRtJHfsN4g" title="[59회 백상] TV부문 대상 - 박은빈 | JTBC 230428 방송" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <!-- <iframe width="889" height="500" src="https://www.youtube.com/embed/3aRtJHfsN4g?loop=1&autoplay=1&mute=1&controls=0&playlist=3aRtJHfsN4g" title="[59회 백상] TV부문 대상 - 박은빈 | JTBC 230428 방송" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+                <iframe width="889" height="500" src="https://www.youtube.com/embed/NI8WaJl5Z0Y?loop=1&autoplay=1&mute=1&controls=0&playlist=NI8WaJl5Z0Y" title="ꕤ 박은빈(PARK EUN BIN) 공식 팬클럽 ‘빙고(BINGO)’ 3기 모집 ꕤ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
             <div class="company_actors">
                 <h2>Let me introduce<br>a star affiliated<br>to the company.</h2>
@@ -173,14 +181,12 @@
                 </div>
             </div>
             <div class="company_story">
-                <img src="./images/tree.png" alt="">
                 <div class="story_text">
                     <div class="text_top">
                         <p>In 2004,</p>
                         <p>‘NAMOOACTORS’</p>
                     </div>
-                    <p>was founded with people,</p>
-                    <p>who are the human faces of this field.</p>
+                    <p>was founded with people,<br><em>who are the human faces of this field.</em></p>
                 </div>
                 <div class="story_text_korean">
                     <p>깊이 뿌리를 내리고 무성한 잎을 키워가 연기자들이<br>쉬어갈 수 있는 시원한 그늘이 되자고 항상 다짐했습니다.</p>
@@ -188,7 +194,6 @@
                 </div>
             </div>
             <div class="program_list">
-                <img src="./images/program_list_top.png" alt="">
                 <div class="swiper program_wrap">
                     <div class="swiper-wrapper program_swiper">
                         <div class="swiper-slide slide"><img src="./images/program001.jpg" alt=""></div>
@@ -197,9 +202,14 @@
                         <div class="swiper-slide slide"><img src="./images/program004.jpg" alt=""></div>
                         <div class="swiper-slide slide"><img src="./images/program005.jpg" alt=""></div>
                         <div class="swiper-slide slide"><img src="./images/program006.jpg" alt=""></div>
+                        <div class="swiper-slide slide"><img src="./images/program001.jpg" alt=""></div>
+                        <div class="swiper-slide slide"><img src="./images/program002.jpg" alt=""></div>
+                        <div class="swiper-slide slide"><img src="./images/program003.jpg" alt=""></div>
+                        <div class="swiper-slide slide"><img src="./images/program004.jpg" alt=""></div>
+                        <div class="swiper-slide slide"><img src="./images/program005.jpg" alt=""></div>
+                        <div class="swiper-slide slide"><img src="./images/program006.jpg" alt=""></div>
                     </div>
                 </div>
-                <img src="./images/program_list_bottom.png" alt="">
             </div>
             <div class="audition">
                 <div class="audition_category">
