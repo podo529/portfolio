@@ -55,17 +55,20 @@
 #wrap main .company_story .story_text_korean p {font-size:1.875rem; line-height:150%; margin-bottom:67px;}
 /* 프로그램 */
 #wrap main .program_list {}
-#wrap main .program_list .program_wrap {
-    background:url(../images/program_list_bg.png) repeat-x;
-    animation:text_move 30s linear infinite both;
-    height:1014px;
+#wrap main .program_list .program_wrap .program_text_top_bg {
+    background:url(../images/program_text_top.png) repeat-x;
+    animation:text_move 90s linear infinite both; height:250px;
+}
+#wrap main .program_list .program_wrap .program_text_bottom_bg {
+    background:url(../images/program_text_bottom.png) repeat-x;
+    animation:text_move 90s linear infinite both; height:250px; margin:90px 0 400px;
 }
 #wrap main .program_list .program_wrap .program_swiper {
-    display:flex; height:100%; gap:25px;
+    display:flex; gap:25px;
     transition-timing-function:linear;
 }
-#wrap main .program_list .program_wrap .program_swiper .slide {width:448px;}
-#wrap main .program_list .program_wrap .program_swiper .slide img {width:100%;}
+#wrap main .program_list .program_wrap .program_swiper .slide {width:440px;}
+#wrap main .program_list .program_wrap .program_swiper .slide img {width:100%; object-fit:contain;}
 
 @keyframes text_move {
     0% {background-position:0 0;}
@@ -73,13 +76,14 @@
 }
 
 /* 오디션공고 */
-#wrap main .audition {}
-#wrap main .audition .audition_category {}
-#wrap main .audition .audition_category p {}
-#wrap main .audition .audition_category button {}
+#wrap main .audition {background-color:#fff; padding:150px 250px;}
+#wrap main .audition .audition_category {display:flex; justify-content:space-between;}
+#wrap main .audition .audition_category p {color:#000; font-size:1.5rem; font-weight:500;}
+#wrap main .audition .audition_category button {color:#000; font-size:1.5rem; font-weight:500;}
 #wrap main .audition .audition_content {}
 #wrap main .audition .audition_content .audition_left {}
-#wrap main .audition .audition_content .audition_left em {}
+#wrap main .audition .audition_content .audition_left em {
+    font-family:'Lexend',sans-serif; font-size:3.125rem; font-weight:600; color:#000;}
 #wrap main .audition .audition_content .audition_left span {}
 #wrap main .audition .audition_content .audition_right {}
 #wrap main .audition .audition_content .audition_right img {}
