@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>권다은 포트폴리오</title>
-        <!-- 웹연결 -->
-        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-        <!--플러그인 필수 css cdn 연결-->
-        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-        <!--플러그인 필수 JS cdn 연결-->
-        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- 웹연결 -->
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/index.css">
+    <script src="./scripts/index.js" defer></script>
 </head>
 <body>
     <header>
         <nav>
-            <a href="#home">Home</a>
-            <a href="#about_me">About Me</a>
-            <a href="#web_projects">Web-Projects</a>
-            <a href="#design">Design</a>
+            <a href="#">Home</a>
+            <a href="#">About Me</a>
+            <a href="#">Web-Projects</a>
+            <a href="#">Design</a>
         </nav>
     </header>
     <div class="swiper" id="wrap">
@@ -29,66 +30,98 @@
         <div class="swiper-wrapper">
             <div class="swiper-slide slide" id="home">
                 <P>Da eun Kwon</P>
-                <p class="job">WebPublisher</p>
-                <p class="job">WebDeblisher</p>
+                <p class="job job1">WebPublisher</p>
+                <p class="job job2">WebDeblisher</p>
+                <img src="./images/sprout001.png" alt="">
                 <h1>PORTFOLIO</h1>
+                <p class="ani">PORTFOLIO</p>
                 <p>2025</p>
             </div>
             <div class="swiper-slide slide" id="about_me">
                 <h2>about me</h2>
                 <div class="about_me_left">
                     <p>끊임없이 노력하고 진화하는<br><em>웹퍼블리셔 권다은</em> 입니다.</p>
+                    <img src="./images/sprout002.png" alt="">
                     <div class="profile">
                         <h3>Profile</h3>
-                        <p><em>권다은</em> Daeun Kwon</p>
+                        <div class="name">
+                            <em>권다은</em>
+                            <span>Daeun Kwon</span>
+                        </div>
                         <p>1995.05.29</p>
                         <p>인천광역시 서구 거주</p>
-                        <div class="line">
-                            <p><em>e-Mail</em></p>
-                            <p>3v3r.alp@gmail.com</p>
-                        </div>
-                        <div class="line">
-                            <p><em>phone</em></p>
-                            <p>010-2385-4899</p>
-                        </div>
-                        <div class="line">
-                            <p><em>gitHub</em></p>
-                            <p>https://github.com/podo529</p>
-                        </div>
+                        <dl>
+                            <dt>e-Mail</dt>
+                            <dd>3v3r.alp@gmail.com</dd>
+                            <dt>phone</dt>
+                            <dd>010-2385-4899</dd>
+                            <dt>gitHub</dt>
+                            <dd>https://github.com/podo529</dd>
+                        </dl>
                     </div>
                     <div class="education">
                         <h3>Education</h3>
-                        <div class="line">
-                            <p><em>uI/UX 프론트엔드 반응형 웹디자인&웹퍼블리셔 양성과정 수료예정</em></p>
-                            <p>2025.02 ~ 2025.08</p>
-                        </div>
-                        <div class="line">
-                            <p><em>명지전문대학 세무회계과 졸업</em></p>
-                            <p>2019.03 ~ 2021.02</p>
-                        </div>
-                        <div class="line">
-                            <p><em>서정대학교 영유아보육과 졸업</em></p>
-                            <p>2014.03 ~ 2014.02</p>
-                        </div>
+                        <dl>
+                            <dt>UI/UX 프론트엔드 반응형 웹디자인&웹퍼블리셔 양성과정 수료예정</dt>
+                            <dd>2025.02 ~ 2025.08</dd>
+                            <dt>명지전문대학 세무회계과 졸업</dt>
+                            <dd>2019.03 ~ 2021.02</dd>
+                            <dt>서정대학교 영유아보육과 졸업</dt>
+                            <dd>2014.03 ~ 2014.02</dd>
+                        </dl>
                     </div>
                 </div>
                 <div class="about_me_right">
                     <div class="skill">
                         <h3>Skill</h3>
-                        <div class="line">
-                            <p><em></em></p>
-                            <p></p>
-                        </div>
+                        <dl>
+                            <dt>Photoshop</dt>
+                            <dd>배너 디자인, 상세페이지 디자인 제작</dd>
+                            <dt>Illustrator</dt>
+                            <dd>아이콘 및 로고 제작</dd>
+                            <dt>figma</dt>
+                            <dd>와이어프레임 및 프로토타입 제작</dd>
+                            <dt>HTML 5</dt>
+                            <dd>웹 표준에 맞는 마크업 설계</dd>
+                            <dt>CSS 3</dt>
+                            <dd>반응형 디자인, 애니메이션 등 구현</dd>
+                            <dt>Javascript</dt>
+                            <dd>로그인 유효검사 및 무한 스크롤, 슬라이드, 메뉴 등 동적 기능</dd>
+                            <dt>Plugin</dt>
+                            <dd>swiper, scrollTrigger 활용 가능</dd>
+                            <dt>J - Query</dt>
+                            <dd>DOM 요소에 들어가는 빠른 동적 애니메이션</dd>
+                            <dt>react</dt>
+                            <dd>State, Props 등 다양한 훅을 이용해서 웹/앱 개발</dd>
+                            <dt>gitHub</dt>
+                            <dd>git 명령어 사용, 개인작업 and 팀 협업 가능</dd>
+                            <dt>oA program</dt>
+                            <dd>문서 작성 및 편집, 표 활용, 프리젠테이션 제작 등 가능</dd>
+                        </dl>
+                    </div>
+                    <div class="license">
+                        <h3>License</h3>
+                        <dl>
+                            <dt>전산세무 2급</dt>
+                            <dd>2022.04</dd>
+                            <dt>FAT 1급</dt>
+                            <dd>2021.09</dd>
+                            <dt>전산회계 1급</dt>
+                            <dd>2021.03</dd>
+                            <dt>컴퓨터활용능력 2급</dt>
+                            <dd>2018.07</dd>
+                            <dt>운전면허 2종 보통</dt>
+                            <dd>2016.12</dd>
+                        </dl>
                     </div>
                 </div>
             </div>
             <div class="swiper-slide slide" id="web_projects">
                 <div class="container">
+                    <h2>Web-Projects</h2>
                     <div class="swiper" id="project_swiper">
-                        <!--필수-->
-                        <h2>Web-Projects</h2>
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide slide1">
+                            <div class="swiper-slide slide">
                                 <div class="left">
                                     <div class="thumnail"><img src="" alt=""></div>
                                 </div>
@@ -120,7 +153,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide slide2">
+                            <div class="swiper-slide slide">
                                 <div class="left">
                                     <div class="thumnail"><img src="" alt=""></div>
                                 </div>
@@ -152,7 +185,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide slide3">
+                            <div class="swiper-slide slide">
                                 <div class="left">
                                     <div class="thumnail"><img src="" alt=""></div>
                                 </div>
@@ -186,35 +219,35 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev swiper_btn"></div>
+                    <div class="swiper-button-next swiper_btn"></div>
                 </div>
             </div>
             <div class="swiper-slide slide" id="design">
                 <h2>Design</h2>
                 <div class="container">
                     <div class="swiper" id="bnr_swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide slide1"><img src="" alt=""></div>
-                            <div class="swiper-slide slide2"><img src="" alt=""></div>
-                            <div class="swiper-slide slide3"><img src="" alt=""></div>
-                            <div class="swiper-slide slide4"><img src="" alt=""></div>
+                        <div class="swiper-wrapper bnr_swiper_wrapper">
+                            <div class="swiper-slide slide"><img src="" alt=""></div>
+                            <div class="swiper-slide slide"><img src="" alt=""></div>
+                            <div class="swiper-slide slide"><img src="" alt=""></div>
+                            <div class="swiper-slide slide"><img src="" alt=""></div>
                         </div>
                     </div>
                     <div class="swiper" id="small_swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide slide1"><img src="" alt=""></div>
-                            <div class="swiper-slide slide2"><img src="" alt=""></div>
-                            <div class="swiper-slide slide3"><img src="" alt=""></div>
-                            <div class="swiper-slide slide4"><img src="" alt=""></div>
+                        <div class="swiper-wrapper bnr_swiper_wrapper">
+                            <div class="swiper-slide slide"><img src="" alt=""></div>
+                            <div class="swiper-slide slide"><img src="" alt=""></div>
+                            <div class="swiper-slide slide"><img src="" alt=""></div>
+                            <div class="swiper-slide slide"><img src="" alt=""></div>
                         </div>
                     </div>
                     <div class="swiper" id="detail_swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide slide1"><img src="" alt=""></div>
-                            <div class="swiper-slide slide2"><img src="" alt=""></div>
-                            <div class="swiper-slide slide3"><img src="" alt=""></div>
-                            <div class="swiper-slide slide4"><img src="" alt=""></div>
+                        <div class="swiper-wrapper bnr_swiper_wrapper">
+                            <div class="swiper-slide slide"><img src="" alt=""></div>
+                            <div class="swiper-slide slide"><img src="" alt=""></div>
+                            <div class="swiper-slide slide"><img src="" alt=""></div>
+                            <div class="swiper-slide slide"><img src="" alt=""></div>
                         </div>
                     </div>
                 </div>
