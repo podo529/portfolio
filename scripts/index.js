@@ -8,6 +8,7 @@ const wrap = new Swiper('#wrap',{
     on: {
         slideChange:function(){
             const activeSlide = this.slides[this.activeIndex];
+            //nav 색 변경
             nav.forEach((i) => {
                 i.classList.remove('active');
             });
@@ -24,6 +25,7 @@ const wrap = new Swiper('#wrap',{
                     i.classList.remove('active');
                 });
             };
+            //현재 슬라이드 nav 굵기
             for(let i of nav) i.classList.remove('active2');
             nav[this.activeIndex].classList.add('active2');
         },
