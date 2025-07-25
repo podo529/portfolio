@@ -149,6 +149,7 @@ header nav a:hover {font-weight:400;}
 #wrap #design .container .container_left {width:1075px; height:508px;}
 #wrap #design .container .container_right {width:288px;}
 #wrap #design .container #bnr_swiper { margin-bottom:60px;}
+#wrap #design .slide:hover img {transform:scale(1.1); transition:transform 1s;}
 #wrap #design .container #bnr_swiper .bnr_swiper_wrapper {transition-timing-function:linear; height:160px;}
 #wrap #design .container #bnr_swiper .bnr_swiper_wrapper .slide {
     cursor:pointer; overflow:hidden;
@@ -157,13 +158,13 @@ header nav a:hover {font-weight:400;}
 #wrap #design .container #long_swiper {}
 #wrap #design .container #long_swiper .long_swiper_wrapper {transition-timing-function:linear; height:288px;}
 #wrap #design .container #long_swiper .long_swiper_wrapper .slide {
-    cursor:pointer;
+    cursor:pointer; overflow:hidden;
 }
 #wrap #design .container #long_swiper .long_swiper_wrapper .slide img {width:100%;}
 #wrap #design .container #detail_swiper {}
 #wrap #design .container #detail_swiper .detail_swiper_wrapper {transition-timing-function:linear; height:508px;}
 #wrap #design .container #detail_swiper .detail_swiper_wrapper .slide {
-    cursor:pointer;
+    cursor:pointer; overflow:hidden;
 }
 #wrap #design .container #detail_swiper .detail_swiper_wrapper .slide img {width:100%;}
 /* ---------------------------end */

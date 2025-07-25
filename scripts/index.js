@@ -55,12 +55,12 @@ const longDesign = new Swiper('#long_swiper',{
     speed:6000,
     loop:true,
 })
-const detailDesign = new Swiper('#detail_swiper',{
+/* const detailDesign = new Swiper('#detail_swiper',{
     slidesPerView:1,
     autoplay:{delay:1000,},
     speed:6000,
     loop:true,
-})
+}) */
 
 //nav
 console.log(nav);
