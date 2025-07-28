@@ -1,5 +1,5 @@
 /* index.css */
-body {min-width:1920px;}
+body {min-width:1920px; max-width:1920px;}
 /* ---------------------------header */
 header {
     position:fixed; right:0; top:0;
@@ -144,7 +144,7 @@ header nav a:hover {font-weight:400;}
 #wrap #design h2::after {background-color:#5D9360;}
 #wrap #design .container {
     border:2px solid #5D9360; width:1578px; height:650px; padding:70px 79px;
-    display:flex; gap:60px; border-radius:22px; position:absolute; left:50%; bottom:80px; transform:translateX(-50%);
+    display:flex; gap:60px; border-radius:22px; position:absolute; left:50%; top:50%; transform:translate(-50%,-40%);
 }
 #wrap #design .container .container_left {width:1075px; height:508px;}
 #wrap #design .container .container_right {width:288px;}
