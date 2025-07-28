@@ -154,7 +154,7 @@ header nav a:hover {font-weight:400;}
 #wrap #design .container #bnr_swiper .bnr_swiper_wrapper .slide {
     cursor:pointer; overflow:hidden;
 }
-#wrap #design .container #bnr_swiper .bnr_swiper_wrapper .slide img {height:100%;}
+#wrap #design .container #bnr_swiper .bnr_swiper_wrapper .slide img {height:100%; width:100%;  object-fit:cover;}
 #wrap #design .container #long_swiper {}
 #wrap #design .container #long_swiper .long_swiper_wrapper {transition-timing-function:linear; height:288px;}
 #wrap #design .container #long_swiper .long_swiper_wrapper .slide {
