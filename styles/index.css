@@ -42,6 +42,7 @@ header nav a:hover {font-weight:400;}
     content:''; width:100%; height:1px; background-color:#DAE5E2; display:block; position:relative; top:10px;
     transform-origin:right center; animation:line_ani 2s linear both;
 }
+#wrap #home #portfolio .job{}
 #wrap #home #portfolio .job p {color:#DAE5E2; border:1px solid #DAE5E2; border-radius:18px; display:inline-block; padding:10px 15px; margin-left:14px;}
 /* ---------------------------about me */
 #wrap #about_me {
@@ -192,7 +193,7 @@ header nav a:hover {font-weight:400;}
     display:none;
 }
 .popup_bg .popup {
-    margin:0 auto; width:700px;
+    margin:0 auto; width:800px;
     height:80vh; overflow:auto;
 }
 .popup_bg .popup img {width:100%;}
