@@ -92,3 +92,19 @@ popup.addEventListener('click',()=>{
     popup.style.display='none'
     wrap.mousewheel.enable();
 })
+
+
+//닥터포헤어 popup
+const drSiteImg = document.querySelector('.dr_popup');
+const drPopup = document.querySelector('.dr_popup_bg');
+const drSiteBtn = document.querySelector('.dr_site_popup')
+
+drSiteBtn.addEventListener('click',()=>{
+    drPopup.style.display = 'block';
+    wrap.mousewheel.disable();
+})
+
+drPopup.addEventListener('click',()=>{
+    drPopup.style.display='none'
+    wrap.mousewheel.enable();
+})
